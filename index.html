@@ -19,7 +19,6 @@
       justify-content: center;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: radial-gradient(circle at top, #ffe6ff 0, #ffd1dc 40%, #ff9a9e 100%);
-      overflow-x: hidden;
       padding: 20px;
     }
 
@@ -30,7 +29,7 @@
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(8px);
       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
-      max-width: 550px;
+      max-width: 600px;
       width: 100%;
       animation: float 3s ease-in-out infinite;
     }
@@ -47,11 +46,11 @@
     .name {
       font-size: 1.6rem;
       font-weight: 600;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
       color: #ff4b5c;
     }
 
-    /* 🔥 BIG IMAGE GALLERY */
+    /* 🔥 IMAGE GALLERY */
     .gallery {
       display: flex;
       justify-content: center;
@@ -62,16 +61,15 @@
 
     .gallery img {
       width: 45%;
-      max-width: 220px;
-      height: 200px;
-      object-fit: cover;
+      max-width: 260px;
+      height: auto;              /* 👈 Keeps full image visible */
       border-radius: 18px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
       transition: transform 0.3s ease;
     }
 
     .gallery img:hover {
-      transform: scale(1.07);
+      transform: scale(1.05);
     }
 
     .message {
@@ -109,11 +107,10 @@
       50% { transform: translateY(-8px); }
     }
 
-    /* 📱 Mobile Optimization */
+    /* 📱 Mobile Responsive */
     @media (max-width: 480px) {
       .gallery img {
         width: 100%;
-        height: auto;
       }
     }
 
@@ -138,7 +135,7 @@
       Happy Birthday Pratiksha ❤️  
       I pray you always stay happy, healthy, and full of dreams. ❤️🎂✨  
       May your smile always stay this bright and your heart always stay this pure.  
-      I’m so lucky to have Mahila Mitra like you 💕✨
+      I’m so lucky to have Mahila Mitra like you💕✨
     </p>
 
     <button class="btn" onclick="showWish()">
